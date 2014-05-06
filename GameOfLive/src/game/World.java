@@ -13,7 +13,7 @@ public class World {
 	private int generation = 0;
 	private Text textGeneration = new Text(10, 4, "Generación: N");
 	private Vector<Rectangle> pixels = new Vector<Rectangle>();
-	private final int SHOW_SIZE = 20;
+	private final int SHOW_SIZE;
 	private final Color[] COLOR_STATUS = {
 		new Color(225,225,225),	// Gris
 		new Color(216,14,14),	// Rojo
@@ -26,10 +26,12 @@ public class World {
 	 * @param height Alto del mundo
 	 * @param initialLive Probabilidad de vida inical (de 0 a 1)
 	 */
-	public World(int width, int height, double initialLive){
+	public World(int width, int height, double initialLive, int pixelSize){
 		if(width <= 1) width = 1;
 		if(height <= 1) height = 1;
 		this.world = new Organism[width][height];
+		
+		this.SHOW_SIZE = pixelSize;
 		
 		for(int x=0; x<width; x++)
 			for(int y=0; y<height; y++){

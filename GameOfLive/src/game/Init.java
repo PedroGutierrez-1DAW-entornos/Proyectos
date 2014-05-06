@@ -18,7 +18,7 @@ public class Init {
 
 	public static void main(String[] args) {
 		
-		World world = new World(30, 30, 0.2);
+		World world = new World(44, 44, 0.2, 15);
 		
 		world.initShow();
 		
