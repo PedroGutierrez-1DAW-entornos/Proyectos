@@ -15,9 +15,9 @@ public class World {
 	private Vector<Rectangle> pixels = new Vector<Rectangle>();
 	private final int SHOW_SIZE;
 	private final Color[] COLOR_STATUS = {
-		new Color(225,225,225),	// Gris
-		new Color(216,14,14),	// Rojo
-		new Color(251,251,9),	// Amarillo
+		new Color(240,240,240),	// Gris
+		new Color(251,212,212),	// Rojo
+		new Color(182,220,30),	// Amarillo
 		new Color(24,203,36)};	// Verde
 	
 	/**
